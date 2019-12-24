@@ -1,0 +1,47 @@
+.cardListContainer {
+  padding: $padding-20 0;
+
+  h4 {
+    line-height: normal;
+    margin-bottom: 0;
+  }
+}
+
+.cardListTitleContainer {
+  margin-bottom: $margin-30;
+  word-break: break-all;
+
+  @include media-breakpoint-down(mdlg) {
+    margin-bottom: $margin-20;
+  }
+}
+
+.cardListDescription {
+  color: $grayMedium;
+  margin-top: 0;
+  margin-bottom: $margin-20;
+}
+
+.cardListButton {
+  background-color: transparent;
+  border: none;
+  color: $primary;
+  font-size: 18px;
+  padding: 0;
+
+  &:hover {
+    color: $link-hover-color;
+    text-decoration: underline;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.emptyDisabledButton {
+  background-color: transparent;
+  border: none;
+  color: transparent;
+  font-size: 18px;
+}

@@ -1,0 +1,77 @@
+.bundleCardContainer {
+  margin-bottom: $margin-30;
+
+  &:hover {
+    .bundleCardImage {
+      transform: scale(1.1);
+    }
+    .overlay {
+      background: transparent;
+    }
+  }
+}
+
+.bundleCardImageContainer {
+  overflow: hidden;
+  position: relative;
+
+  .overlay {
+    transition: all 0.3s linear;
+  }
+}
+
+.bundleCardImage {
+  @extend %backgroundImage;
+  height: 420px;
+  transition: all 0.2s linear;
+  width: 100%;
+
+  @include media-breakpoint-down(mdlg) {
+    height: 350px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    height: 380px;
+  }
+}
+
+.bundleCardContent {
+  bottom: 0;
+  padding: $padding-20;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+
+  p {
+    color: white;
+    font-weight: 800;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+  }
+  hr {
+    color: white;
+    margin-bottom: 20px;
+  }
+}
+
+.numberOfPlacesContainer {
+  align-items: center;
+  display: flex;
+}
+
+.numberOfPlaces {
+  color: white;
+  font-size: 14px;
+}
+
+.arrowIconContainer {
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  height: 20px;
+  justify-content: center;
+  margin-left: $margin-10;
+  width: 20px;
+}

@@ -1,0 +1,170 @@
+.usernameContainer {
+  position: relative;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @include media-breakpoint-only(mdlg) {
+    max-width: 200px;
+  }
+
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+}
+
+.userDropdown {
+  background-color: white;
+  width: 240px;
+  position: absolute;
+  right: 0;
+  top: 52px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.07);
+  border: solid 1px $grayExtraLight;
+  -webkit-animation-name: zoomInDown;
+  animation-name: zoomInDown;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+}
+
+.userDropdownMobile {
+  background-color: white;
+  width: 240px;
+  position: absolute;
+  right: 0;
+  top: 55px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.07);
+  border: solid 1px $grayExtraLight;
+  -webkit-animation-name: zoomInDown;
+  animation-name: zoomInDown;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+
+  @include media-breakpoint-up(md) {
+    top: 75px;
+  }
+}
+
+@-webkit-keyframes zoomInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -10px, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -10px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+}
+
+@keyframes zoomInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -10px, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -10px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+}
+
+.userDropdownHidden {
+  display: none;
+}
+
+.navBarFixedUsername {
+  color: $primaryDark;
+  font-size: 12px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: calc(100% - 55px);
+}
+
+.navBarUsername {
+  color: $primaryDark;
+  font-size: 12px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: calc(100% - 50px);
+}
+
+.dropdownLogout {
+  border: none;
+}
+
+.dropdownLinkContainer {
+  padding: $padding-10 0;
+  margin: 0 $margin-20 !important;
+  border-bottom: solid 1px $grayExtraLight !important;
+
+  &:hover {
+    .dropdownLink {
+      color: $primaryDark !important;
+    }
+  }
+}
+
+.dropdownLinkContaineNoBorder {
+  padding: $padding-10 0;
+  margin: 0 $margin-20 !important;
+
+  &:hover {
+    .dropdownLink {
+      color: $primaryDark !important;
+    }
+  }
+}
+
+.dropdownLink {
+  color: $grayMedium !important;
+  margin-left: 0 !important;
+}
+
+.userProfilePhotoNav {
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+  margin-right: 10px;
+  border: 1px solid $grayExtraLight;
+}
+
+.loginContainer {
+  display: flex;
+  align-items: center;
+
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+}
+
+.mobileDropdown {
+  @include media-breakpoint-up(mdlg) {
+    display: none;
+  }
+}

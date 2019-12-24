@@ -1,0 +1,104 @@
+.placeDescriptionHeaderContainer {
+  padding: $padding-40 0;
+
+  h1 {
+    margin-bottom: 0;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding-top: $padding-30;
+    padding-bottom: $padding-20;
+
+    h1 {
+      margin-bottom: $margin-20;
+    }
+  }
+}
+
+.placeDescriptionSubheaderContainer {
+  padding-bottom: $padding-60;
+
+  @include media-breakpoint-down(sm) {
+    padding-bottom: $padding-30;
+  }
+}
+
+.reviewsAndRatingContainer {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+
+  .recentReviewsContainer {
+    margin-right: $margin-20;
+
+    @include media-breakpoint-down(sm) {
+      margin-right: 0;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    justify-content: space-between;
+  }
+}
+
+.singlePlaceAboutContainer {
+  background-color: $grayExtraLight;
+  padding: $padding-60 0;
+
+  @include media-breakpoint-down(sm) {
+    padding: 0 0 $padding-30 0;
+  }
+}
+
+.aboutHeader {
+  font-weight: 800;
+  margin-bottom: $margin-20;
+
+  @include media-breakpoint-down(sm) {
+    margin-top: $margin-30;
+    font-size: 16px !important;
+  }
+}
+
+.contactAlign {
+  align-items: center;
+  display: flex;
+  margin-bottom: $margin-10;
+  overflow-wrap: break-word;
+  word-break: break-all;
+}
+
+.contactText {
+  font-size: 16px;
+  padding-left: 10px;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 14px;
+  }
+}
+
+.placeTagsContainer {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+
+  .tag {
+    margin-left: $margin-10;
+
+    &:hover {
+      cursor: default;
+      opacity: 1;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    justify-content: flex-start;
+    margin-top: $margin-20;
+
+    .tag {
+      margin-left: 0;
+      margin-right: 4px;
+    }
+  }
+}

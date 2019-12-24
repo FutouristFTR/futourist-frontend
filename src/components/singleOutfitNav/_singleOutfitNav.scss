@@ -1,0 +1,82 @@
+.singleOutfitNavContainer {
+  position: sticky;
+  top: 75px;
+  z-index: 1;
+  background-color: white;
+  padding: 15px 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+
+  @include media-breakpoint-down(sm) {
+    top: 55px;
+  }
+}
+
+.outfitNavItemList {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  padding-left: $padding-20;
+  margin: 0;
+
+  @include media-breakpoint-down(sm) {
+    padding-left: 0;
+  }
+}
+
+.outfitNavListItem {
+  display: inline-block;
+  margin-right: $margin-20;
+
+  @include media-breakpoint-down(sm) {
+    margin-right: 0;
+  }
+}
+
+.outfitNavIconStyle {
+  width: 25px;
+  height: 20px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+}
+
+.activeNavButton {
+  background-color: $primary;
+  padding: 5px;
+  min-width: 215px;
+  display: inline-block;
+  border-radius: 30px;
+  color: white !important;
+  font-size: 16px;
+  @include media-breakpoint-down(sm) {
+    font-size: 14px;
+    padding: 5px 15px;
+    min-width: unset;
+    margin: 0 5px 0 0;
+  }
+}
+.activeNavButton:hover {
+  cursor: pointer;
+  text-decoration: none;
+  background-color: $primary;
+}
+
+.inactiveNavButton {
+  background-color: $grayExtraLight;
+  padding: 5px;
+  min-width: 215px;
+  display: inline-block;
+  border-radius: 30px;
+  color: $primaryDark;
+  font-size: 16px;
+  @include media-breakpoint-down(sm) {
+    font-size: 14px;
+    padding: 5px 15px;
+    margin: 0 5px 0 0;
+    min-width: unset;
+  }
+}
+.inactiveNavButton:hover {
+  cursor: pointer;
+  text-decoration: none;
+  background-color: $grayLight;
+}

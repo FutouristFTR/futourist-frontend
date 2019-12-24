@@ -1,0 +1,38 @@
+.outfitCardContainer {
+  margin-bottom: $margin-30;
+  width: 100%;
+
+  &:hover {
+    .outfitCardImage {
+      transform: scale(1.1);
+    }
+  }
+
+  p {
+    margin-top: $margin-20;
+  }
+}
+
+.outfitCardImageContainer {
+  margin-bottom: $margin-20;
+  overflow: hidden;
+}
+
+.outfitCardImage {
+  @extend %backgroundImage;
+  height: 325px;
+  transition: all 0.2s linear;
+  width: 100%;
+
+  @include media-breakpoint-down(lg) {
+    height: 270px;
+  }
+
+  @include media-breakpoint-down(mdlg) {
+    height: 200px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    height: 220px;
+  }
+}

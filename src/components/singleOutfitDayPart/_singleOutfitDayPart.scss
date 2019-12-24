@@ -1,0 +1,43 @@
+.outfitDayPartContainer {
+  margin-top: $margin-60;
+
+  p {
+    font-size: 18px !important;
+    line-height: 1.88;
+  }
+
+  @include media-breakpoint-down(sm) {
+    p {
+      font-size: 16px !important;
+    }
+  }
+}
+
+.outfitDayPartTitleContainer {
+  text-align: center;
+  margin-bottom: $margin-40;
+}
+
+.outfitDayPartTitle {
+  background-color: white;
+  font-size: 24px;
+  font-weight: 800;
+  color: $grayMedium;
+  padding: 0 $padding-20;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  letter-spacing: 5px;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+
+  @include media-breakpoint-down(sm) {
+    padding: 0 $padding-10;
+    font-size: 20px;
+    top: 48px;
+  }
+}
+
+.outfitTitleLine {
+  border-bottom: 1px solid $grayLight;
+}

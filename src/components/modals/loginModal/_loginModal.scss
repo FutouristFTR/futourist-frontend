@@ -1,0 +1,159 @@
+.loginModalInnerContainer {
+  @extend %positionMiddle;
+  background-color: white;
+  border-radius: 3px;
+  padding: $padding-30 0;
+  position: absolute;
+  width: 540px;
+  z-index: 12;
+
+  @include media-breakpoint-down(sm) {
+    width: 99%;
+    padding: $padding-10 0;
+
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+
+.loginHeaderContainer {
+  align-items: center;
+  border-bottom: 1px solid $grayExtraLight;
+  display: flex;
+  justify-content: center;
+  padding: 0 $padding-30 $padding-20 $padding-30;
+  position: relative;
+
+  h4 {
+    margin-bottom: 0;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding: $padding-10 0;
+  }
+}
+
+.closeLoginModal {
+  position: absolute;
+  right: 30px;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.7;
+  }
+}
+
+.socialLoginSectionContainer {
+  padding: $padding-20 $padding-30;
+  position: relative;
+
+  p {
+    color: $grayMedium;
+    text-align: center;
+    margin: $margin-20 0;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding: $padding-10;
+
+    p {
+      margin: $margin-10 0;
+    }
+  }
+}
+
+.socialLoginButtonContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: $margin-40;
+
+  @include media-breakpoint-down(sm) {
+    margin-bottom: $margin-30;
+  }
+}
+
+.socialButton {
+  align-items: center;
+  border-radius: 6px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  width: 225px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+
+  i {
+    margin-right: $margin-20;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.fbLoginButton {
+  background-color: #2653b4;
+  color: white;
+}
+
+.googleLoginButton {
+  background-color: white;
+  color: $primaryDark;
+}
+
+.splitBetweenLoginsContainer {
+  border-bottom: 1px solid $grayExtraLight;
+  text-align: center;
+  width: 100%;
+}
+
+.splitBetweenLogins {
+  background-color: white;
+  bottom: 10px;
+  color: $grayMedium;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 55px;
+
+  @include media-breakpoint-down(sm) {
+    bottom: 0;
+  }
+}
+
+.loginModalSectionContainer {
+  padding: $padding-20 $padding-30;
+
+  p {
+    font-weight: 800;
+    color: $primaryDark;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding: $padding-10;
+  }
+}
+
+.loginModalLinksContainer {
+  padding: $padding-20 $padding-30;
+  display: flex;
+  justify-content: space-between;
+
+  @include media-breakpoint-down(sm) {
+    padding: $padding-10;
+  }
+}
+
+.loginModalLinks {
+  @include media-breakpoint-down(sm) {
+    font-size: 14px;
+  }
+}
+
+.loginErrorContainer {
+  margin-bottom: $margin-20;
+}

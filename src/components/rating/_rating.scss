@@ -1,0 +1,35 @@
+.ratingContainer {
+  align-items: center;
+  display: flex;
+}
+
+.userRatingnumber {
+  color: $primaryDark;
+  font-size: 24px;
+  font-weight: 800;
+  margin-left: $margin-10;
+}
+
+.maxRatingNumberContainer {
+  display: flex;
+  height: 30px;
+  margin-left: 5px;
+}
+
+.maxRatingNumber {
+  color: $primaryDark;
+  font-size: 12px;
+}
+
+.ratingStar {
+  margin-right: 2px;
+}
+
+.ratingStar:hover {
+  cursor: pointer;
+}
+
+.starIconStyle {
+  margin-bottom: 3px;
+  margin-right: 2px;
+}

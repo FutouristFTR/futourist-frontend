@@ -1,0 +1,189 @@
+.userProfileSection {
+  margin-top: 115px;
+
+  h2 {
+    margin-top: $margin-40;
+    margin-bottom: $margin-20;
+  }
+
+  @include media-breakpoint-down(sm) {
+    margin-top: 100px;
+
+    .cardListTitleContainer {
+      margin-top: $margin-20;
+    }
+  }
+}
+
+.bioContainer {
+  height: 100%;
+  min-height: 240px;
+  padding: 75px 95px;
+  border-radius: 6px;
+  border: solid 1px $grayLight;
+
+  @include media-breakpoint-down(mdlg) {
+    min-height: 160px;
+    padding: $padding-30;
+  }
+
+  @include media-breakpoint-down(sm) {
+    margin-top: $margin-20;
+  }
+}
+
+.bioTitleAndEditLink {
+  display: flex;
+}
+
+.bioTitle {
+  font-weight: 800;
+  margin-bottom: $margin-20;
+  margin-right: $margin-20;
+}
+
+.bioContent {
+  color: $grayMedium;
+  word-break: break-all;
+}
+
+.deleteReviewButtonContainer {
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -10px;
+  right: 0;
+  border: 1px solid $grayExtraLight;
+  padding: 5px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $grayExtraLight;
+  }
+
+  @include media-breakpoint-down(sm) {
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    right: 9px;
+  }
+}
+
+.deleteReviewPopupContainer {
+  position: absolute;
+  width: max-content;
+  background-color: white;
+  border-radius: 6px;
+  border: 1px solid $grayExtraLight;
+  bottom: 42px;
+  right: -7px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+
+  @include media-breakpoint-down(sm) {
+    bottom: 32px;
+    right: -12px;
+  }
+}
+
+.deleteMessageContainer {
+  padding: 5px $padding-20;
+  border-bottom: 1px solid $grayExtraLight;
+
+  span {
+    font-size: 16px;
+    color: $primaryDark;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 14px;
+    }
+  }
+}
+
+.deleteMessageContainerRemoved {
+  padding: 5px $padding-20;
+  span {
+    font-size: 16px;
+    color: $primaryDark;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 14px;
+    }
+  }
+}
+
+.yesButton {
+  width: 50%;
+  border: none;
+  border-bottom-left-radius: 6px;
+  background-color: white;
+  padding: 5px $padding-20;
+  border-right: 1px solid $grayExtraLight;
+
+  &:hover {
+    background-color: $grayExtraLight;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  font-size: 18px;
+  color: $primaryDark;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 16px;
+  }
+}
+
+.noButton {
+  width: 50%;
+  border: none;
+  border-bottom-right-radius: 6px;
+  background-color: white;
+  padding: 5px $padding-20;
+
+  &:hover {
+    background-color: $grayExtraLight;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  font-size: 18px;
+  color: $primaryDark;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 16px;
+  }
+}
+
+.arrowDown {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid $grayExtraLight;
+  position: absolute;
+  bottom: -15px;
+  right: -10px;
+  transform: translateX(-50%);
+}
+
+.arrowDown:before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+  border-top: 14px solid white;
+  top: -15px;
+  left: -14px;
+}

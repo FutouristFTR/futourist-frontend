@@ -1,0 +1,30 @@
+.registerSection {
+  display: flex;
+  width: 540px;
+  margin: 100px auto 0 auto;
+
+  @include media-breakpoint-down(sm) {
+    width: 100%;
+  }
+}
+
+.registerModalInnerContainer {
+  width: 100%;
+}
+
+.alreadyHaveAccContainer {
+  margin-top: $margin-20;
+}
+
+.alreadyHaveAccBtn {
+  color: $primary;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.registerSubmitButton {
+  margin-top: $margin-20;
+}

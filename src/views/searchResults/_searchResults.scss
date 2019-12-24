@@ -1,0 +1,54 @@
+.searchResultsCardsSection {
+  margin-top: 180px;
+
+  @include media-breakpoint-down(sm) {
+    margin-top: 140px;
+  }
+}
+
+.searchResultTitle {
+  margin-bottom: $margin-40;
+
+  @include media-breakpoint-down(sm) {
+    margin-bottom: $margin-20;
+  }
+}
+
+.searchResultsSection {
+  margin: $margin-60 0;
+  h2 {
+    margin-bottom: $margin-20;
+  }
+
+  @include media-breakpoint-down(sm) {
+    margin: $margin-30 0;
+  }
+}
+
+.searchResultsText {
+  font-size: 24px !important;
+  color: $primaryDark;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 20px !important;
+  }
+}
+
+.searchResultsTextBold {
+  font-size: 24px !important;
+  color: $primaryDark;
+  font-weight: 800;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 20px !important;
+  }
+}
+
+.noReslutsText {
+  color: $primaryDark;
+}
+
+.noResultsTextBold {
+  color: $primary;
+  font-weight: 800;
+}

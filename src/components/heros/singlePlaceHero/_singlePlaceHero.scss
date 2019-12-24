@@ -1,0 +1,20 @@
+.singlePlaceHeroContainer {
+  height: 70vh;
+  position: relative;
+
+  @include media-breakpoint-down(sm) {
+    height: 60vh;
+  }
+}
+
+.singlePlaceHeroBackground {
+  @extend %backgroundImage;
+  height: 100%;
+}
+
+.singlePlaceHeroContent {
+  bottom: 40px;
+  color: white;
+  position: absolute;
+  width: 100%;
+}

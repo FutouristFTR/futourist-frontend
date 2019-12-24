@@ -1,0 +1,29 @@
+.videoLoadingSpinnerContainer {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100%;
+  width: 100%;
+  z-index: 13;
+}
+
+.player-wrapper {
+  position: relative;
+  padding-top: 56.25%; /* 720 / 1280 = 0.5625 */
+}
+
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.videoPlayerWrapper {
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  video {
+    width: unset !important;
+    border-radius: 6px;
+  }
+}

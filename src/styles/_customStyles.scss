@@ -1,0 +1,62 @@
+// import of reusable styles
+
+@import "./common";
+@import "./utility";
+
+// import of view styles
+
+@import "../views/home/home";
+@import "../views/searchResults/searchResults";
+@import "../views/singleBundle/singleBundle";
+@import "../views/singleOutfit/singleOutfit";
+@import "../views/singlePlace/singlePlace";
+@import "../views/userProfile/userProfile";
+@import "../views/editProfile/editProfile";
+@import "../views/register/register";
+@import "../views/forgotPassword/forgotPassword";
+@import "../views/privacyPolicy/privacyPolicy";
+@import "../views//terms/terms";
+
+// import of component styles
+
+/* import of card styles */
+@import "../components/cards/bundleCard/bundleCard";
+@import "../components/cards/outfitCard/outfitCard";
+@import "../components/cards/placeCard/placeCard";
+@import "../components/cards/resultsCard/resultsCard";
+@import "../components/cards/reviewCard/reviewCard";
+@import "../components/cards/userCard/userCard";
+
+/* import of hero styles */
+@import "../components/heros/homeHero/homeHero";
+@import "../components/heros/singleBundleHero/singleBundleHero";
+@import "../components/heros/singleOutfitHero/singleOutfitHero";
+@import "../components/heros/singlePlaceHero/singlePlaceHero";
+
+/* import of modal styles*/
+@import "../components/modals/addReviewModal/addReviewModal";
+@import "../components/modals/loginModal/loginModal";
+@import "../components/modals/singlePlaceGalleryModal/singlePlaceGalleryModal";
+@import "../components/modals/watchReviewModal/watchReviewModal";
+@import "../components/modals/editProfilePhotoModal/editProfilePhotoModal";
+
+@import "../components/cardList/cardList";
+@import "../components/homeSearch/homeSearch";
+@import "../components/loadingSpinner/loadingSpinner";
+@import "../components/locationSuggestions/locationSuggestions";
+@import "../components/navbar/navbar";
+@import "../components/navbar/navbarFixed";
+@import "../components/navbarSearchMobile/navbarSearchMobile";
+@import "../components/placeLocationMap/placeLocationMap";
+@import "../components/placesSuggestions/placesSuggestions";
+@import "../components/rating/rating";
+@import "../components/recentReviews/recentReviews";
+@import "../components/searchInput/searchInput";
+@import "../components/singleOutfitDayPart/singleOutfitDayPart";
+@import "../components/singleOutfitNav/singleOutfitNav";
+@import "../components/singlePlaceDescription/singlePlaceDescription";
+@import "../components/sortSearchResults/sortSearchResults";
+@import "../components/tag/tag";
+@import "../components/userDropdown/userDropdown";
+
+@import "../components/videoPlayer/videoPlayer";

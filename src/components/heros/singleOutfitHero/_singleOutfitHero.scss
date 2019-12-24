@@ -1,0 +1,29 @@
+.singleOutfitHeroContainer {
+  position: relative;
+}
+
+.singleOutfitHeroBackground {
+  @extend %backgroundImage;
+  min-height: 80vh;
+}
+
+.singleOutfitHeroContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+  h1 {
+    color: $white;
+    text-transform: uppercase;
+  }
+
+  p {
+    color: $white;
+  }
+
+  @include media-breakpoint-down(sm) {
+    width: 100%;
+  }
+}

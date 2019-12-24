@@ -1,0 +1,134 @@
+@include media-breakpoint-up(xl) {
+  h1 {
+    font-size: 36px !important;
+    color: $primaryDark;
+  }
+  h2 {
+    font-size: 26px !important;
+    color: $primaryDark;
+  }
+  h3 {
+    font-size: 18px !important;
+    color: $primaryDark;
+  }
+  h4 {
+    font-size: 24px !important;
+    color: $primaryDark;
+  }
+  h5 {
+    font-size: 18px !important;
+    color: $primaryDark;
+  }
+  p {
+    font-size: 16px !important;
+    color: $primaryDark;
+  }
+}
+
+@include media-breakpoint-only(lg) {
+  h1 {
+    font-size: 36px !important;
+    color: $primaryDark;
+  }
+  h2 {
+    font-size: 24px !important;
+    color: $primaryDark;
+  }
+  h3 {
+    font-size: 18px !important;
+    color: $primaryDark;
+  }
+  h4 {
+    font-size: 24px !important;
+    color: $primaryDark;
+  }
+  h5 {
+    font-size: 18px !important;
+    color: $primaryDark;
+  }
+  p {
+    font-size: 16px !important;
+    color: $primaryDark;
+  }
+}
+
+@include media-breakpoint-only(mdlg) {
+  h1 {
+    font-size: 30px !important;
+    color: $primaryDark;
+  }
+  h2 {
+    font-size: 24px !important;
+    color: $primaryDark;
+  }
+  h3 {
+    font-size: 24px !important;
+    color: $primaryDark;
+  }
+  h4 {
+    font-size: 20px !important;
+    color: $primaryDark;
+  }
+  h5 {
+    font-size: 18px !important;
+    color: $primaryDark;
+  }
+  p {
+    font-size: 14px !important;
+    color: $primaryDark;
+  }
+}
+
+@include media-breakpoint-only(md) {
+  h1 {
+    font-size: 28px !important;
+    color: $primaryDark;
+  }
+  h2 {
+    font-size: 22px !important;
+    color: $primaryDark;
+  }
+  h3 {
+    font-size: 22px !important;
+    color: $primaryDark;
+  }
+  h4 {
+    font-size: 20px !important;
+    color: $primaryDark;
+  }
+  h5 {
+    font-size: 18px !important;
+    color: $primaryDark;
+  }
+  p {
+    font-size: 14px !important;
+    color: $primaryDark;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  h1 {
+    font-size: 26px !important;
+    color: $primaryDark;
+  }
+  h2 {
+    font-size: 20px !important;
+    color: $primaryDark;
+  }
+  h3 {
+    font-size: 22px !important;
+    color: $primaryDark;
+  }
+  h4 {
+    font-size: 20px !important;
+    color: $primaryDark;
+  }
+  h5 {
+    font-size: 18px !important;
+    color: $primaryDark;
+  }
+  p {
+    font-size: 14px !important;
+    color: $primaryDark;
+  }
+}

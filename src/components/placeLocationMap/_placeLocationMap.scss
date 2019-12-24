@@ -1,0 +1,17 @@
+.googlemapsContainer {
+  width: 100%;
+  height: 280px;
+
+  .mapboxgl-map {
+    border-radius: 6px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    height: 200px;
+  }
+}
+
+.mapMarker {
+  width: 50px;
+  height: 50px;
+}

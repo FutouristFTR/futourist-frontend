@@ -1,0 +1,21 @@
+.homeHeroContainer {
+  position: relative;
+}
+
+.videoBackground {
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+}
+
+.heroContent {
+  @extend %verticalMiddle;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+
+  @include media-breakpoint-down(sm) {
+    top: 55% !important;
+  }
+}

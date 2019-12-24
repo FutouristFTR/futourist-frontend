@@ -1,0 +1,175 @@
+.homeSearchContainer {
+  background-color: white;
+  border-radius: 6px;
+  padding: $padding-40;
+
+  h1 {
+    line-height: 1.17;
+    margin-bottom: 0;
+  }
+
+  @include media-breakpoint-down(mdlg) {
+    padding: $padding-20;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding: $padding-10;
+  }
+}
+
+.homeSearchForm {
+  margin-top: $margin-40;
+
+  @include media-breakpoint-down(mdlg) {
+    margin-top: $margin-20;
+  }
+}
+
+.categoriesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: $margin-40;
+
+  @include media-breakpoint-down(mdlg) {
+    margin-bottom: $margin-20;
+    justify-content: unset;
+  }
+}
+
+.categoryWraper {
+  align-items: center;
+  display: flex;
+  margin-bottom: 0;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @include media-breakpoint-down(mdlg) {
+    margin-right: $margin-10;
+  }
+}
+
+.categoryInput {
+  -webkit-appearance: none;
+  border-radius: 3px;
+  border: solid 1px $grayLight;
+  height: 15px;
+  position: relative;
+  width: 15px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.categoryInput:checked,
+.categoryInput:checked:after {
+  box-shadow: 0 2px 2px 0 rgba(42, 199, 211, 0.3);
+}
+
+.categoryInput:checked {
+  background-color: $primary;
+  border-color: $primary;
+}
+
+.categoryInput:checked:after {
+  align-items: center;
+  background-color: transparent;
+  box-shadow: none;
+  color: white;
+  content: "\2713";
+  display: flex;
+  height: 15px;
+  position: absolute;
+  top: 0px;
+  width: 15px;
+}
+
+.categoryLabel {
+  color: $primaryDark;
+  font-size: 16px;
+  margin-bottom: 0;
+  margin-left: $margin-10;
+  text-transform: capitalize;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 11px;
+    margin-left: 5px;
+  }
+}
+
+.homeSearchButton {
+  background-color: $primary;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 800;
+  margin-top: $margin-40;
+  padding: 15px 0;
+  text-align: center;
+  width: 100%;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.searchLocationInputWrapper {
+  .customInput {
+    margin-bottom: $margin-10;
+  }
+
+  .myLocation {
+    color: $primary;
+    margin-bottom: $margin-10;
+    width: fit-content;
+
+    &:hover {
+      color: $primaryDark;
+      cursor: pointer;
+    }
+  }
+}
+
+.popularSearchesContainer {
+  margin-top: $margin-20;
+}
+
+.popularSearchesTitle {
+  color: $primaryDark;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.popularSearchesLabelContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.morePopularSearchesButton {
+  align-items: center;
+  background-color: $primaryDark;
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  font-size: 14px;
+  margin-top: 10px;
+  padding: 5px 15px;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.7;
+  }
+}

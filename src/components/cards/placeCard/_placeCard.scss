@@ -1,0 +1,63 @@
+.placeCardContainer {
+  margin-bottom: $margin-30;
+  width: 100%;
+
+  p {
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    overflow: hidden;
+  }
+}
+
+.placeCardImageContainer {
+  overflow: hidden;
+
+  &:hover {
+    .placeCardImage {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.placeCardImage {
+  @extend %backgroundImage;
+  height: 200px;
+  transition: all 0.2s linear;
+  width: 100%;
+}
+
+.placeCardReviewsAndRatingContainer {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0 $margin-20;
+}
+
+.addFisrtReviewButton {
+  background-color: transparent;
+  border: none;
+  color: $primary;
+  display: flex;
+  align-items: center;
+  margin: $margin-10 0;
+  padding: 0;
+  width: 100%;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.placeCardLink:hover {
+  cursor: pointer;
+}
+
+.addFirstReviewIcon {
+  margin-right: 5px;
+  margin-left: -3px;
+}

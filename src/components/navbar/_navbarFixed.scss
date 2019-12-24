@@ -1,0 +1,107 @@
+.navbarFixedHidden {
+  top: -75px !important;
+  @include transition();
+}
+
+.navbarFixed {
+  align-items: center;
+  background-color: $white;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: row;
+  height: 75px;
+  justify-content: space-between;
+  left: 0;
+  padding: 0 $padding-30;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 12;
+  @include transition();
+
+  .navbarLeft {
+    display: flex;
+    height: 100%;
+  }
+
+  .navbarRight {
+    align-items: center;
+    display: flex;
+
+    a:last-child {
+      margin: 0;
+      margin-left: 10px;
+      color: $white;
+    }
+    button:last-child {
+      margin: 0;
+      margin-left: 10px;
+    }
+
+    a {
+      @include transition();
+      border-bottom: 1px solid transparent;
+      color: $primaryDark;
+      margin-right: $margin-40;
+
+      @include media-breakpoint-down(mdlg) {
+        margin-right: $margin-20;
+      }
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    button {
+      border-bottom: 1px solid transparent;
+      @include transition();
+    }
+
+    button:hover {
+      border-bottom: 1px solid $primaryDark;
+    }
+  }
+
+  .navbarLogoFixed {
+    height: 35px;
+    width: 150px;
+  }
+
+  .navbarFixedLogoLink {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbarLoginButton {
+    border: 0;
+    background-color: transparent;
+    color: $primaryDark;
+  }
+
+  .navbarRegisterButton {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: $primary;
+    border-radius: 20px;
+    color: $white;
+    height: 40px;
+    width: 120px;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    height: 55px;
+    padding: 0 $padding-10;
+  }
+}
+
+.navbarLink {
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+}

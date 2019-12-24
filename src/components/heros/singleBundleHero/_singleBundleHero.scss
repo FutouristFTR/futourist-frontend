@@ -1,0 +1,43 @@
+.singleBundleHeroContainer {
+  position: relative;
+}
+
+.singleBundleHeroBackground {
+  @extend %backgroundImage;
+  min-height: 90vh;
+
+  @include media-breakpoint-down(sm) {
+    min-height: 70vh;
+  }
+}
+
+.singleBundleHeroContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+  h1 {
+    color: $white;
+    font-size: 13px !important;
+  }
+
+  h2 {
+    color: $white;
+    font-size: 36px !important;
+  }
+
+  p {
+    color: $white;
+  }
+
+  @include media-breakpoint-down(sm) {
+    width: 100%;
+    top: 55%;
+
+    h2 {
+      font-size: 30px !important;
+    }
+  }
+}

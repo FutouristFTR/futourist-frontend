@@ -1,0 +1,33 @@
+.bundleContent {
+  margin: $margin-60 0;
+
+  @include media-breakpoint-down(sm) {
+    margin: $margin-30 0;
+  }
+}
+
+.bundleIntro {
+  color: $grayMedium;
+  font-size: 13px !important;
+  font-weight: 800;
+  padding-bottom: $padding-60;
+  text-align: center;
+
+  @include media-breakpoint-down(sm) {
+    padding-bottom: $padding-30;
+    margin: 0;
+  }
+}
+
+.bundleDescription {
+  font-size: 20px !important;
+  max-width: 470px;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: $padding-60;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 18px !important;
+    padding-bottom: $padding-30;
+  }
+}

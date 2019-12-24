@@ -1,0 +1,73 @@
+#searchContainerMobile {
+  margin-right: $margin-30;
+  @include media-breakpoint-up(md) {
+    display: none;
+  }
+}
+
+.searchDropdownMobile {
+  background-color: $white;
+  padding: $padding-10;
+  margin: 0 $margin-10;
+  border: 1px solid $grayLight;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  position: absolute;
+  top: 55px;
+  right: 0;
+  left: 0;
+  -webkit-animation-name: zoomInDown;
+  animation-name: zoomInDown;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+
+  .categoriesContainer {
+    margin-bottom: 0;
+  }
+
+  .categoryLabel {
+    font-size: 11px;
+    margin-left: 5px;
+  }
+
+  .submitButton {
+    margin-top: $margin-30 !important;
+    margin-left: 0 !important;
+  }
+}
+
+@-webkit-keyframes zoomInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -10px, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -10px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+}
+
+@keyframes zoomInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -10px, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -10px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+}

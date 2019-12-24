@@ -1,0 +1,71 @@
+.resultsCardContainer {
+  align-items: center;
+  border-radius: 3px;
+  border: 1px solid $grayLight;
+  display: flex;
+
+  &:hover {
+    background-color: rgba(42, 199, 211, 0.05);
+    border: 1px solid $primary;
+    box-shadow: 0 5px 10px 0 rgba(42, 199, 211, 0.1);
+    cursor: pointer;
+  }
+
+  @include media-breakpoint-down(sm) {
+    margin-bottom: $margin-10;
+  }
+}
+
+.resultsCardContainerActive {
+  align-items: center;
+  background-color: rgba(42, 199, 211, 0.05);
+  border-radius: 3px;
+  border: 1px solid $primary;
+  box-shadow: 0 5px 10px 0 rgba(42, 199, 211, 0.1);
+  display: flex;
+
+  @include media-breakpoint-down(sm) {
+    margin-bottom: $margin-10;
+  }
+}
+
+.resultsCardContainerDisabled {
+  align-items: center;
+  border-radius: 3px;
+  border: solid 1px $grayExtraLight;
+  display: flex;
+  opacity: 0.6;
+
+  @include media-breakpoint-down(sm) {
+    margin-bottom: $margin-10;
+  }
+}
+
+.resultsCardImage {
+  height: 80px;
+  margin-right: $margin-20;
+  width: 80px;
+  border-radius: 3px;
+
+  @include media-breakpoint-down(mdlg) {
+    margin-right: $margin-10;
+  }
+}
+
+.resultsCardDescriptionContainer {
+  display: grid;
+}
+
+.resultsCardName {
+  color: $primaryDark;
+  font-size: 16px;
+  font-weight: 800;
+
+  @include media-breakpoint-down(mdlg) {
+    font-size: 14px;
+  }
+}
+
+.resultsCardDescription {
+  font-size: 12px;
+}

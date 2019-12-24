@@ -1,0 +1,309 @@
+.addReviewButtonContainer {
+  align-items: center;
+  background-color: $primary;
+  border-radius: 35px;
+  border: none;
+  bottom: 30px;
+  display: flex;
+  height: 70px;
+  justify-content: center;
+  padding: 0;
+  position: fixed;
+  right: 30px;
+  width: 70px;
+  z-index: 10;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  @include media-breakpoint-down(sm) {
+    bottom: 10px;
+    right: 10px;
+    height: 40px;
+    width: 40px;
+  }
+}
+
+.addReviewModalContainer {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 11;
+}
+
+.addReviewModalInnerContainer {
+  background-color: white;
+  border-radius: 3px;
+  padding: $padding-30 0;
+  position: absolute;
+  width: 540px;
+  z-index: 12;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  @include media-breakpoint-down(sm) {
+    width: 99%;
+    padding: $padding-10 0;
+  }
+}
+
+.headerContainer {
+  align-items: center;
+  border-bottom: 1px solid $grayExtraLight;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 $padding-30 $padding-20 $padding-30;
+
+  h4 {
+    margin-bottom: 0;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding: 0 $padding-10 $padding-10 $padding-10;
+  }
+}
+
+.closeAddReviewModal:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.addReviewSuccessImage {
+  width: 230px;
+  margin: $margin-40 0;
+
+  @include media-breakpoint-down(sm) {
+    margin: $margin-20 0;
+  }
+}
+
+.modalSectionContainer {
+  border-bottom: 1px solid $grayExtraLight;
+  padding: $padding-20 $padding-30;
+
+  p {
+    font-weight: 800;
+    color: $primaryDark;
+  }
+
+  .descriptionInput {
+    margin-bottom: 0 !important;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding: $padding-10;
+    padding-bottom: $padding-20;
+  }
+}
+
+.modalCentered {
+  justify-content: center;
+  padding: 0 95px;
+  text-align: center;
+
+  h4 {
+    margin-bottom: $margin-20;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding: 0 $padding-20;
+  }
+}
+
+.addReviewSuccessMessage {
+  color: $grayMedium !important;
+  font-weight: normal !important;
+}
+
+.addReviewSearch {
+  margin-bottom: 0;
+  width: 100%;
+  height: 50px;
+}
+
+.dropzoneContainer {
+  align-items: center;
+  background-color: $grayExtraLight;
+  border-radius: 6px;
+  border: dashed 1px $grayMedium;
+  color: $grayMedium;
+  display: flex;
+  font-size: 12px;
+  height: 85px;
+  justify-content: center;
+  padding: $padding-10;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.desktopUpload {
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+}
+
+.mobileUpload {
+  @include media-breakpoint-up(mdlg) {
+    display: none;
+  }
+}
+
+.mobileUploadContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.dropzoneMobileContainer {
+  width: 30%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  border-radius: 6px;
+  margin: 0 $margin-10;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.uploadButtonText {
+  font-size: 12px;
+  color: $primary;
+  margin-top: 10px;
+}
+
+.uploadedContentContainer {
+  position: relative;
+  height: 120px;
+  width: fit-content;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.removeContentButtonContainer {
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
+  display: flex;
+  height: 20px;
+  justify-content: center;
+  right: -10px;
+  position: absolute;
+  top: -10px;
+  width: 20px;
+  z-index: 1;
+
+  &:hover {
+    background-color: $grayExtraLight;
+    cursor: pointer;
+  }
+}
+
+.uploadedContentPreview {
+  border-radius: 6px;
+  height: 120px;
+  object-fit: cover;
+  width: 68px;
+}
+
+.uploadedContentPreviewVideo {
+  border-radius: 6px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.errorContainer {
+  margin-bottom: -$margin-10;
+}
+
+.errorMessage {
+  font-size: 12px;
+  color: #eb5c5c;
+}
+
+.reviewDescriptionHeader {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: $margin-20;
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.charCounter {
+  font-size: 12px;
+}
+
+.modalLastSection {
+  padding: 0 $padding-30;
+  padding-top: $padding-20;
+
+  p {
+    font-weight: 800;
+    color: $primaryDark;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding: $padding-10;
+    padding-bottom: 0;
+  }
+}
+
+.submitReviewButtonContainer {
+  margin-top: $margin-40;
+  padding: 0 $padding-20;
+
+  @include media-breakpoint-down(sm) {
+    margin-top: $margin-30;
+  }
+}
+
+.finishAddReviewSection {
+  justify-content: center;
+  display: flex;
+  button {
+    width: 200px !important;
+  }
+}
+
+.addReviewPlaceSearchWrapper {
+  position: relative;
+}
+
+.selectedPlace {
+  font-size: 18px;
+  font-weight: 800;
+  color: $primary;
+  margin-left: $margin-20;
+}
+
+.clearSelectedPlace:hover {
+  cursor: pointer;
+}
+
+.uploadImage {
+  color: $primary;
+}

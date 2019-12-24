@@ -1,0 +1,64 @@
+.openGalleryButton {
+  padding: $padding-20;
+  border-radius: 6px;
+  background-color: white;
+  color: $primaryDark;
+  font-weight: 800;
+  border: none;
+
+  &:hover {
+    opacity: 0.7;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.galleryImageContainer {
+  z-index: 15;
+  width: 85%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.galleryImage {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.prevImageButton {
+  z-index: 15;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.nextImageButton {
+  z-index: 15;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.closeGalleryButton {
+  z-index: 15;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

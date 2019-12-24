@@ -1,0 +1,44 @@
+.placesSuggestionsDropdown {
+  display: none;
+}
+
+.placesSuggestionsDropdown-visible {
+  display: -webkit-box;
+  overflow: scroll;
+  position: absolute;
+  width: 100%;
+  background-color: white;
+  border: 1px solid $grayLight;
+  border-top: none;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+}
+
+.placesSuggestionsDropdown-visible::-webkit-scrollbar {
+  display: none;
+}
+
+.palceSuggestion {
+  color: $primaryDark;
+  border-bottom: 1px solid $grayLight;
+  width: 100%;
+  padding: $padding-10;
+
+  &:hover {
+    cursor: pointer;
+    color: $primary;
+  }
+}
+
+.palceSuggestion:last-of-type {
+  border-bottom: none;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}

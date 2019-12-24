@@ -1,0 +1,232 @@
+.watchReviewOuterContainer {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 11;
+}
+
+.watchReviewModalContainer {
+  margin-top: auto;
+  margin-bottom: auto;
+  position: relative;
+  color: #ffffff;
+  min-height: 60%;
+
+  @include media-breakpoint-down(md) {
+    min-height: 10%;
+  }
+}
+
+.videoReviewContainer {
+  position: absolute;
+  @extend %positionMiddle;
+  max-width: 90%;
+  min-width: fit-content;
+  height: 90% !important;
+  width: unset !important;
+  z-index: 11;
+  background-color: #000;
+  color: #ffffff;
+}
+
+.watchReviewModalButtons {
+  position: absolute;
+  @extend %positionMiddle;
+  z-index: 11;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 660px;
+}
+
+.reviewInfo {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  width: calc(100% - 60px);
+
+  @include media-breakpoint-down(sm) {
+    top: 10px;
+    right: 10px;
+    width: calc(100% - 20px);
+  }
+}
+
+.reviewUserProfileLink {
+  display: flex;
+  align-items: center;
+  max-width: calc(100% - 35px);
+}
+
+.reviewAuthorPhoto {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  border: solid 1px #ffffff;
+
+  @include media-breakpoint-down(sm) {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+.reviewAuthorName {
+  font-weight: 800;
+  margin-left: $margin-10;
+  color: $white;
+  display: flex;
+  align-items: center;
+  width: calc(100% - 60px);
+
+  &:hover {
+    @include transition();
+    text-decoration: underline;
+  }
+
+  span {
+    font-size: 16px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 12px;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    width: calc(100% - 30px);
+  }
+}
+
+.reviewPostedDate {
+  margin-left: $margin-10;
+  display: flex;
+
+  .timeAgo {
+    font-size: 16px;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 12px;
+    }
+  }
+}
+
+.reviewContent {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  margin: $margin-30;
+
+  @include media-breakpoint-down(sm) {
+    margin: $margin-10;
+  }
+}
+
+.reviewTitle {
+  font-size: 18px;
+  margin-bottom: $margin-20;
+
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  @include media-breakpoint-down(sm) {
+    font-size: 14px;
+    margin-bottom: $margin-10;
+  }
+}
+
+.reviewDescription {
+  margin-bottom: $margin-20;
+  line-height: 1.15;
+
+  @include media-breakpoint-down(sm) {
+    margin-bottom: $margin-10;
+  }
+}
+
+.reviewDescriptionText {
+  font-size: 16px;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 12px;
+  }
+}
+
+.buttonLeft {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: -70px;
+  transform: translateY(-50%);
+
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+}
+
+.buttonRight {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: -70px;
+  transform: translateY(-50%);
+
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+}
+
+.reviewModalImage {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.upperGradient {
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  top: 0;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0) 26%);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.bottomGradient {
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  bottom: 0;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.8));
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.nextReviewContainer {
+  position: absolute;
+  right: 0;
+  bottom: 40%;
+  width: 70%;
+  height: 50%;
+  z-index: 15;
+}
+
+.prevReviewContainer {
+  position: absolute;
+  left: 0;
+  bottom: 40%;
+  width: 30%;
+  height: 50%;
+  z-index: 15;
+}
