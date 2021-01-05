@@ -5,7 +5,7 @@
   "dependencies": {
     "@videojs/http-streaming": "^1.10.5",
     "algoliasearch": "^3.33.0",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "blueimp-load-image": "^2.24.0",
     "firebase": "^6.3.0",
     "moment": "^2.24.0",
